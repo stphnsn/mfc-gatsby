@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run: echo "A first hello"
 
-  stuff:
+  workflow_build:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
@@ -19,10 +19,8 @@ workflows:
   version: 2
   build:
     jobs:
-      - build:
+      - workflow_build:
           filters:
             branches:
               only:
                 - master
-
-      - stuff
