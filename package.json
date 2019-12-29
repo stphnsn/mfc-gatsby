@@ -1,0 +1,48 @@
+{
+  "name": "mfc-gatsby",
+  "private": true,
+  "description": "Manor Farm Cottages",
+  "version": "1.0.0",
+  "license": "Unlicensed",
+  "scripts": {
+    "clean:cache": "rimraf .cache",
+    "clean:node": "rimraf node_modules",
+    "clean:public": "rimraf public/*",
+    "clean": "yarn clean:cache && yarn clean:node && yarn clean:public",
+    "build": "yarn clean:public && gatsby build",
+    "build:clean": "rimraf './public/*.+(js|json)' && rimraf './public/page-data' && rimraf './public/404' && rimraf './public/static'",
+    "dev": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "yarn lint --fix"
+  },
+  "dependencies": {
+    "gatsby": "^2.4.3",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-no-javascript": "^2.0.5",
+    "gatsby-plugin-no-sourcemaps": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-typescript": "^2.0.13",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^5.0.8",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.2.0",
+    "jsdom": "^9.4.0",
+    "lint-staged": "^8.1.6",
+    "path": "^0.12.7",
+    "prettier": "^1.17.0",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.4.5"
+  }
+}
