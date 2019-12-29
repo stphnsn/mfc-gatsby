@@ -9,7 +9,10 @@ jobs:
       - run: echo "A first hello"
 
 workflows:
-  build_deploy:
+  build:
     jobs:
-      - checkout
-      - run: echo "A first workflow"
+      - build:
+          filters:
+            branches:
+              only:
+                - master

@@ -16,7 +16,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "lint:ci": "circleci config validate"
   },
   "dependencies": {
     "gatsby": "^2.4.3",
