@@ -52,6 +52,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
+      - restore_node_modules
       - build_and_clean
 
 workflows:
