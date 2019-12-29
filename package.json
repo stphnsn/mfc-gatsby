@@ -10,7 +10,7 @@
     "clean:public": "rimraf public/*",
     "clean": "yarn clean:cache && yarn clean:public && yarn clean:node ",
     "build": "yarn clean:public && gatsby build",
-    "build:clean": "rimraf './public/*.+(js|json)' && rimraf './public/page-data' && rimraf './public/404' && rimraf './public/static'",
+    "postbuild": "rimraf './public/*.+(js|json)' && rimraf './public/page-data' && rimraf './public/404' && rimraf './public/static'",
     "dev": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "start": "npm run develop",
