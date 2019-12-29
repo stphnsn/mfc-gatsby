@@ -8,6 +8,11 @@ jobs:
       - checkout
       - run: echo "A first hello"
 
+  stuff:
+    steps:
+      - checkout
+      - run: echo "A first hello"
+
 workflows:
   build:
     jobs:
@@ -16,3 +21,5 @@ workflows:
             branches:
               only:
                 - master
+
+      - stuff
