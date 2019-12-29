@@ -1,4 +1,5 @@
-version: 2.1
+version: 2
+
 jobs:
   build:
     docker:
@@ -6,3 +7,9 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
+
+workflows:
+  build_deploy:
+    jobs:
+      - checkout
+      - run: echo "A first workflow"

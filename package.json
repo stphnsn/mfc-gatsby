@@ -8,7 +8,7 @@
     "clean:cache": "rimraf .cache",
     "clean:node": "rimraf node_modules",
     "clean:public": "rimraf public/*",
-    "clean": "yarn clean:cache && yarn clean:node && yarn clean:public",
+    "clean": "yarn clean:cache && yarn clean:public && yarn clean:node ",
     "build": "yarn clean:public && gatsby build",
     "build:clean": "rimraf './public/*.+(js|json)' && rimraf './public/page-data' && rimraf './public/404' && rimraf './public/static'",
     "dev": "gatsby develop",
