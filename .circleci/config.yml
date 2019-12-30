@@ -54,7 +54,17 @@ jobs:
           at: .
       - restore_node_modules
       - build_and_clean
-      - run: yarn checkbuild
+
+  deploy:
+    executor: node-executor
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - restore_node_modules
+      - run:
+          name: deploy
+          command: yarn deploy
 
 workflows:
   version: 2
@@ -69,3 +79,7 @@ workflows:
       - build_and_clean:
           requires:
             - install
+
+      - deploy:
+          requires:
+            - build_and_clean
