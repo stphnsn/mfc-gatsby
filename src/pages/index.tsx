@@ -20,7 +20,7 @@ const Page = () => (
     <Helmet title={seo.title}>
       <meta name="description" content={seo.description} />
       <link rel="icon" type="image/ico" sizes="32x32" href={seo.favicon} />
-      <title>{seo.title}sss</title>
+      <title>{seo.title}</title>
       <meta property="og:url" content={seo.url} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
