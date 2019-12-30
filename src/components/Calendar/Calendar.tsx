@@ -1,10 +1,11 @@
 import React, { FC } from 'react'
 
 interface CalendarProps {
-  bookingsObj: object
+  bookings: object
 }
 
-const createCalendar = (bookingsObj = {}) => {
+const createCalendar = (bookings = {}) => {
+  console.log('Calendar bookings', bookings)
   let html = ''
 
   const numberOfMonths = 12
@@ -88,27 +89,25 @@ const createCalendar = (bookingsObj = {}) => {
     html += '</tr>'
     for (let k = 0; k < rows; k++) {
       for (let col = 0; col < 8; col++) {
-        const m =
+        const mm =
           (month + 1).toString().length === 1 ? '0' + (month + 1) : month + 1
-        const d = count.toString().length === 1 ? '0' + count : count
+        const dd = count.toString().length === 1 ? '0' + count : count
         if (!startOfWeek) {
-          startOfWeek = '' + year + m + d
-          console.log(startOfWeek)
+          startOfWeek = `${year}-${mm}-${dd}`
           if (
-            bookingsObj[startOfWeek] &&
-            bookingsObj[startOfWeek].status &&
-            bookingsObj[startOfWeek].status === 'booked'
+            bookings[startOfWeek] &&
+            bookings[startOfWeek].status &&
+            bookings[startOfWeek].status === 'booked'
           ) {
             html += '<tr class="unavailable">'
           } else {
             html += '<tr>'
           }
         }
-
         if (col === 7) {
           html += '<td class="price"><span>'
-          if (bookingsObj[startOfWeek]) {
-            html += '£' + bookingsObj[startOfWeek].total
+          if (bookings[startOfWeek]) {
+            html += '£' + bookings[startOfWeek].price
           } else {
             html += '£TBD'
           }
@@ -137,8 +136,8 @@ const createCalendar = (bookingsObj = {}) => {
   }
 }
 
-const Calendar: FC<CalendarProps> = ({ bookingsObj }) => {
-  return <div dangerouslySetInnerHTML={createCalendar(bookingsObj)} />
+const Calendar: FC<CalendarProps> = ({ bookings }) => {
+  return <div dangerouslySetInnerHTML={createCalendar(bookings)} />
 }
 
 export { Calendar }
