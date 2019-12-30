@@ -1,16 +1,15 @@
-import React from "react";
+import React from 'react'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
-import "../styles.css";
-import { Body } from "../common";
+import '../styles.css'
 
 const seo = {
-  url: "https://t3.gg",
-  title: "Minimal Gatsby Typescript Template",
-  description: "Minimal Gatsby Typescript Template",
-  favicon: "/icon.png"
-};
+  url: 'https://t3.gg',
+  title: 'Minimal Gatsby Typescript Template',
+  description: 'Minimal Gatsby Typescript Template',
+  favicon: '/icon.png',
+}
 
 const home = () => (
   <div className="home">
@@ -24,8 +23,7 @@ const home = () => (
       <meta property="og:description" content={seo.description} />
       <meta property="og:type" content="website" />
     </Helmet>
-    <Body />
   </div>
-);
+)
 
-export default home;
+export default home

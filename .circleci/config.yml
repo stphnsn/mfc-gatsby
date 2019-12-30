@@ -54,6 +54,7 @@ jobs:
           at: .
       - restore_node_modules
       - build_and_clean
+      - run: yarn checkbuild
 
 workflows:
   version: 2
