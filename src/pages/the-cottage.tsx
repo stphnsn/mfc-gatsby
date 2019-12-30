@@ -7,6 +7,7 @@ import '../styles.css'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { Nav } from '../components/Nav'
+import { Calendar } from '../components/Calendar'
 
 const seo = {
   url: 'https://t3.gg',
@@ -39,6 +40,8 @@ const Page = () => (
               you have to miss out on those touches of luxury.
             </p>
           </section>
+
+          <Calendar dt="Date" bookingsObj={{}} />
 
           <section className="room">
             <h2>The Lounge</h2>
