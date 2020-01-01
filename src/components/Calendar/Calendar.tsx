@@ -94,11 +94,7 @@ const createCalendar = (bookings = {}) => {
         const dd = count.toString().length === 1 ? '0' + count : count
         if (!startOfWeek) {
           startOfWeek = `${year}-${mm}-${dd}`
-          if (
-            bookings[startOfWeek] &&
-            bookings[startOfWeek].status &&
-            bookings[startOfWeek].status === 'booked'
-          ) {
+          if (bookings[startOfWeek] && bookings[startOfWeek].status) {
             html += '<tr class="unavailable">'
           } else {
             html += '<tr>'

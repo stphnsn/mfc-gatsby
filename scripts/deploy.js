@@ -1,6 +1,5 @@
-// deploy.js
 const fs = require('fs')
-const FtpClient = require('ftp')
+const ftp = require('ftp')
 const glob = require('glob')
 
 const basePath = '../public'
@@ -14,7 +13,7 @@ const config = {
   password: process.env.FTP_PASSWORD,
 }
 
-const ftpClient = new FtpClient()
+const ftpClient = new ftp()
 
 function createDirectory(destination) {
   return ftpClient.mkdir(destination, true, error => {
@@ -56,7 +55,7 @@ function handlePath(path) {
 }
 
 ftpClient.on('ready', () => {
-  console.log('FTP: ready')
+  console.log('FTP: Ready')
   // Get an array of all files and directories
   // in the given base path and send them to the
   // `handlePath()` function to decide if a
