@@ -9,15 +9,7 @@ const createCalendar = (bookings = {}) => {
   let html = ''
 
   const numberOfMonths = 12
-  const days = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ]
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   const daysCalendar = ['S', 'S', 'M', 'T', 'W', 'T', 'F']
   const daysObj = {
     Sunday: 1,
@@ -89,8 +81,7 @@ const createCalendar = (bookings = {}) => {
     html += '</tr>'
     for (let k = 0; k < rows; k++) {
       for (let col = 0; col < 8; col++) {
-        const mm =
-          (month + 1).toString().length === 1 ? '0' + (month + 1) : month + 1
+        const mm = (month + 1).toString().length === 1 ? '0' + (month + 1) : month + 1
         const dd = count.toString().length === 1 ? '0' + count : count
         if (!startOfWeek) {
           startOfWeek = `${year}-${mm}-${dd}`
@@ -133,7 +124,7 @@ const createCalendar = (bookings = {}) => {
 }
 
 const Calendar: FC<CalendarProps> = ({ bookings }) => {
-  return <div dangerouslySetInnerHTML={createCalendar(bookings)} />
+  return <div id="calendar" dangerouslySetInnerHTML={createCalendar(bookings)} />
 }
 
 export { Calendar }

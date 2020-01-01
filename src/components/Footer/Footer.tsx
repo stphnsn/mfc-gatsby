@@ -22,9 +22,7 @@ const Footer = () => {
             </li>
             <li>
               <span>Email: </span>
-              <a href="mailto:info@manorfarm-cottages.co.uk">
-                info@manorfarm-cottages.co.uk
-              </a>
+              <a href="mailto:info@manorfarm-cottages.co.uk">info@manorfarm-cottages.co.uk</a>
             </li>
           </ul>
         </nav>
@@ -54,9 +52,7 @@ const Footer = () => {
           </ul>
         </nav>
 
-        <p className="copyright">
-          © S.P. Stephenson Ltd 2014. All Rights reserved.
-        </p>
+        <p className="copyright">© S.P. Stephenson Ltd 2014. All Rights reserved.</p>
       </div>
     </footer>
   )
