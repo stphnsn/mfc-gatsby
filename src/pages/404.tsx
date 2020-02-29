@@ -2,8 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import '../styles.css'
-
 const seo = {
   url: 'https://t3.gg',
   title: 'Minimal Gatsby Typescript Template',

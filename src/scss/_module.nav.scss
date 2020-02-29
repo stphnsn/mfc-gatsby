@@ -1,0 +1,109 @@
+/*  ## NAVIGATION  ------------------------------------------------------------------*/
+
+.menu {
+  overflow: hidden;
+  position: relative;
+}
+
+.menu ul {
+  background-color: rgba(51, 51, 51, 1);
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  @extend %serif;
+  border-bottom: 1px #111 solid;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu a {
+  color: #ccc;
+  display: block;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.home .nav-home a,
+.the-cottage .nav-the-cottage a,
+.the-stables .nav-the-stables a,
+.about-the-village .nav-about-the-village a,
+.things-to-do .nav-things-to-do a,
+.getting-here .nav-getting-here a {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #fff;
+}
+
+//  ## MODULE MEDIA QUERIES  --------------------------------------------------------*/
+
+@media screen and (min-width: $breakpoint-large) {
+  body {
+    background-color: $color-page-base;
+    padding-left: 0;
+  }
+
+  .menu {
+    border-bottom: 1px solid darken($color-page-base, 10%);
+    height: auto;
+    margin: 0 auto 30px;
+    min-height: 0;
+    padding: 20px 0 15px;
+    position: static;
+    text-align: center;
+    top: auto;
+    width: $container-large;
+  }
+
+  .menu ul {
+    background-color: transparent;
+    display: inline-block;
+    height: auto;
+    position: static;
+    width: auto;
+  }
+
+  .menu li {
+    border: 0;
+    float: left;
+    padding: 0 15px;
+    width: auto;
+  }
+
+  .menu a {
+    color: black;
+    padding: 0;
+    line-height: 35px;
+    color: darken($color-page-base, 85%);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+
+  .menu a:hover {
+    background-color: transparent;
+  }
+
+  .home .nav-home a,
+  .the-cottage .nav-the-cottage a,
+  .the-stables .nav-the-stables a,
+  .about-the-village .nav-about-the-village a,
+  .things-to-do .nav-things-to-do a,
+  .getting-here .nav-getting-here a {
+    background-color: transparent !important;
+    color: darken($color-page-base, 100%);
+    font-weight: normal;
+    position: relative;
+    border-bottom: 1px solid darken($color-page-base, 100%);
+  }
+}

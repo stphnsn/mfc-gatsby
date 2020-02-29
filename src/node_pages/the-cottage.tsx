@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles.css'
+import '../../static/assets/css/styles.css'
 
 import { Calendar } from '../components/Calendar'
 import { Template } from '../components/Template'
@@ -24,13 +24,10 @@ const Page = ({ pageContext: { bookings } }) => {
         <h2>The Lounge</h2>
         <figure>
           <picture>
-            <source srcSet="/assets/images/new/cottage-lounge-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/new/cottage-lounge-alt-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/new/cottage-lounge-alt-600x399@75.jpg" />
-            <img
-              srcSet="/assets/images/new/cottage-lounge-alt-600x399@40.jpg"
-              alt="Manor Farm Cottage’s generous lounge"
-            />
+            <source srcSet="/assets/images/cottage-lounge-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
+            <source srcSet="/assets/images/cottage-lounge-alt-1000x665@75.jpg" media="(min-width: 830px)" />
+            <source srcSet="/assets/images/cottage-lounge-alt-600x399@75.jpg" />
+            <img srcSet="/assets/images/cottage-lounge-alt-600x399@40.jpg" alt="Manor Farm Cottage’s generous lounge" />
           </picture>
         </figure>
         <div className="description">
@@ -62,12 +59,12 @@ const Page = ({ pageContext: { bookings } }) => {
         <h2>The Kitchen</h2>
         <figure>
           <picture>
-            <source srcSet="/assets/images/new/cottage-kitchen-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/new/cottage-kitchen-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/new/cottage-kitchen-600x399@75.jpg" />
+            <source srcSet="/assets/images/cottage-kitchen-1660x1104@75.jpg" media="(min-width: 1100px)" />
+            <source srcSet="/assets/images/cottage-kitchen-1000x665@75.jpg" media="(min-width: 830px)" />
+            <source srcSet="/assets/images/cottage-kitchen-600x399@75.jpg" />
 
             <img
-              srcSet="/assets/images/new/cottage-kitchen-600x399@40.jpg"
+              srcSet="/assets/images/cottage-kitchen-600x399@40.jpg"
               alt="The well equipped kitchen in Manor Farm Cottage"
             />
           </picture>
@@ -95,14 +92,11 @@ const Page = ({ pageContext: { bookings } }) => {
         <h2>Master bedroom</h2>
         <figure>
           <picture>
-            <source srcSet="/assets/images/new/cottage-master-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/new/cottage-master-alt-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/new/cottage-master-alt-600x399@75.jpg" />
+            <source srcSet="/assets/images/cottage-master-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
+            <source srcSet="/assets/images/cottage-master-alt-1000x665@75.jpg" media="(min-width: 830px)" />
+            <source srcSet="/assets/images/cottage-master-alt-600x399@75.jpg" />
 
-            <img
-              srcSet="/assets/images/new/cottage-master-alt-600x399@40.jpg"
-              alt="Manor Farm Cottage’s mater bedroom"
-            />
+            <img srcSet="/assets/images/cottage-master-alt-600x399@40.jpg" alt="Manor Farm Cottage’s mater bedroom" />
           </picture>
         </figure>
         <div className="description">
@@ -128,11 +122,11 @@ const Page = ({ pageContext: { bookings } }) => {
         <h2>Second bedroom</h2>
         <figure>
           <picture>
-            <source srcSet="/assets/images/new/cottage-bedroom-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/new/cottage-bedroom-alt-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/new/cottage-bedroom-alt-600x399@75.jpg" />
+            <source srcSet="/assets/images/cottage-bedroom-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
+            <source srcSet="/assets/images/cottage-bedroom-alt-1000x665@75.jpg" media="(min-width: 830px)" />
+            <source srcSet="/assets/images/cottage-bedroom-alt-600x399@75.jpg" />
             <img
-              srcSet="/assets/images/new/cottage-bedroom-alt-600x399@40.jpg"
+              srcSet="/assets/images/cottage-bedroom-alt-600x399@40.jpg"
               alt="Manor Farm Cottage’s second bedroom shown with twin beds"
             />
           </picture>
@@ -155,10 +149,10 @@ const Page = ({ pageContext: { bookings } }) => {
         <h2>The Bathroom</h2>
         <figure>
           <picture>
-            <source srcSet="/assets/images/new/cottage-bathroom-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/new/cottage-bathroom-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/new/cottage-bathroom-600x399@75.jpg" />
-            <img srcSet="/assets/images/new/cottage-bathroom-600x399@40.jpg" alt="Manor Farm Cottage’s bathroom" />
+            <source srcSet="/assets/images/cottage-bathroom-1660x1104@75.jpg" media="(min-width: 1100px)" />
+            <source srcSet="/assets/images/cottage-bathroom-1000x665@75.jpg" media="(min-width: 830px)" />
+            <source srcSet="/assets/images/cottage-bathroom-600x399@75.jpg" />
+            <img srcSet="/assets/images/cottage-bathroom-600x399@40.jpg" alt="Manor Farm Cottage’s bathroom" />
           </picture>
         </figure>
         <div className="description">

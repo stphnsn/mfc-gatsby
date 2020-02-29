@@ -1,0 +1,63 @@
+header {
+  background-color: $color-page-base;
+  border-bottom: 1px solid darken($color-page-base, 10%);
+  height: 44px;
+  position: relative;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-inner h1 {
+  display: none;
+}
+
+.header-inner > a {
+  display: block;
+  height: 39px;
+  left: 50%;
+  margin-left: -28px; // Slightly off center to look visually correct
+  overflow: hidden;
+  padding: 5px 5px 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.header-inner > a img {
+  width: 45px;
+}
+
+.header-inner li:last-child {
+  display: none;
+}
+
+//  ## MODULE MEDIA QUERIES  --------------------------------------------------------*/
+
+@media screen and (min-width: $breakpoint-large) {
+  header {
+    height: 135px;
+    margin: 0 auto;
+    max-width: $container-large;
+  }
+
+  .header-inner > a {
+    height: 81px;
+    left: 50%;
+    margin-left: -71px; // Slightly off center to look visually correct
+    top: 30px;
+    width: 110px;
+  }
+
+  .header-inner > a img {
+    height: auto;
+    width: 110px;
+  }
+
+  .header-inner li {
+    display: none;
+  }
+}

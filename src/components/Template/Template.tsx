@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import '../../styles.css'
+import '../../../static/assets/css/styles.css'
 
 import { Header } from '../Header'
 import { Footer } from '../Footer'
@@ -23,13 +23,13 @@ const Template: FC<TemplateProps> = ({ id, title, desc, children }) => (
     </Helmet>
     <div className="container">
       <Header />
+      <Nav />
       <main className="main" data-page={id}>
         <div className="content" id="content">
           {children}
         </div>
       </main>
       <Footer />
-      <Nav />
     </div>
   </div>
 )

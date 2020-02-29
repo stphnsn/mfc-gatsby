@@ -1,0 +1,83 @@
+/*  ## LAYOUT  ----------------------------------------------------------------------*/
+
+html {
+  background-color: $color-page-base;
+  height: 100%;
+}
+
+.container {
+  background-color: $color-page-base;
+  min-height: 100%;
+  overflow-x: hidden; // Prevents horizontal scroll when nav is visible
+}
+
+.page {
+  background-color: $color-page-base;
+  height: 100%;
+  left: 0;
+  margin-left: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.main {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  min-height: 400px;
+}
+
+.content {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  margin: 0 auto;
+  max-width: $container-medium;
+  min-width: 280px;
+  padding: 0;
+}
+
+figure img {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-height: 400px) {
+  .main {
+    min-height: 500px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-small) {
+  .content {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  html {
+    background-color: $color-page-base;
+    height: 100%;
+  }
+
+  body {
+    background-color: $color-page-base;
+    height: 100%;
+    min-height: 100%;
+    padding-left: 0;
+  }
+
+  section {
+    max-width: $container-large;
+    width: $container-large;
+  }
+
+  .content {
+    padding: 0;
+  }
+}

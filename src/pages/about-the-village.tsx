@@ -16,41 +16,39 @@ const Page = () => (
       </p>
     </section>
 
-    <section className="gallery swipe" id="slider">
-      <div className="swipe-wrap">
-        <figure>
-          <picture>
-            <source srcSet="/assets/images/church-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/church-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/church-600x399@75.jpg" />
-            <img srcSet="/assets/images/church-600x399@40.jpg" alt="Goodmanham Church" />
-          </picture>
-        </figure>
-        <figure>
-          <picture>
-            <source srcSet="/assets/images/wolds-way-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/wolds-way-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/wolds-way-600x399@75.jpg" />
-            <img srcSet="/assets/images/wolds-way-600x399@40.jpg" alt="Sign post for the Wolds Way" />
-          </picture>
-        </figure>
-        <figure>
-          <picture>
-            <source srcSet="/assets/images/goodmanham-arms-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/goodmanham-arms-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/goodmanham-arms-600x399@75.jpg" />
-            <img srcSet="/assets/images/goodmanham-arms-600x399@40.jpg" alt="The Goodmanham Arms pub" />
-          </picture>
-        </figure>
-        <figure>
-          <picture>
-            <source srcSet="/assets/images/street-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/street-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/street-600x399@75.jpg" />
-            <img srcSet="/assets/images/street-600x399@40.jpg" alt="Houses in the village of Goodmanham" />
-          </picture>
-        </figure>
-      </div>
+    <section className="gallery">
+      <figure>
+        <picture>
+          <source srcSet="/assets/images/street-1660x1104@75.jpg" media="(min-width: 1100px)" />
+          <source srcSet="/assets/images/street-1000x665@75.jpg" media="(min-width: 830px)" />
+          <source srcSet="/assets/images/street-600x399@75.jpg" />
+          <img srcSet="/assets/images/street-600x399@40.jpg" alt="Houses in the village of Goodmanham" />
+        </picture>
+      </figure>
+      <figure>
+        <picture>
+          <source srcSet="/assets/images/goodmanham-arms-1660x1104@75.jpg" media="(min-width: 1100px)" />
+          <source srcSet="/assets/images/goodmanham-arms-1000x665@75.jpg" media="(min-width: 830px)" />
+          <source srcSet="/assets/images/goodmanham-arms-600x399@75.jpg" />
+          <img srcSet="/assets/images/goodmanham-arms-600x399@40.jpg" alt="The Goodmanham Arms pub" />
+        </picture>
+      </figure>
+      <figure>
+        <picture>
+          <source srcSet="/assets/images/church-1660x1104@75.jpg" media="(min-width: 1100px)" />
+          <source srcSet="/assets/images/church-1000x665@75.jpg" media="(min-width: 830px)" />
+          <source srcSet="/assets/images/church-600x399@75.jpg" />
+          <img srcSet="/assets/images/church-600x399@40.jpg" alt="Goodmanham Church" />
+        </picture>
+      </figure>
+      <figure>
+        <picture>
+          <source srcSet="/assets/images/wolds-way-1660x1104@75.jpg" media="(min-width: 1100px)" />
+          <source srcSet="/assets/images/wolds-way-1000x665@75.jpg" media="(min-width: 830px)" />
+          <source srcSet="/assets/images/wolds-way-600x399@75.jpg" />
+          <img srcSet="/assets/images/wolds-way-600x399@40.jpg" alt="Sign post for the Wolds Way" />
+        </picture>
+      </figure>
     </section>
 
     <section className="text">
