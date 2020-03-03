@@ -3,7 +3,7 @@ const ftp = require('ftp')
 const glob = require('glob')
 
 const basePath = '../public'
-const destinationPath = '/test.stphnsn.com/html'
+const destinationPath = '/manorfarm-cottages.co.uk/html'
 const config = {
   // We store the credentials for
   // our FTP server as environemnt
