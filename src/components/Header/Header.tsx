@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <div className="header-inner">
         <a href="/" rel="internal">
-          <img src="/assets/images/logo.svg" alt="" />
+          <img src="/assets/images/logo.svg" alt="Manor Farm Cottages" />
         </a>
         <h1>Manor Farm Cottage</h1>
       </div>
