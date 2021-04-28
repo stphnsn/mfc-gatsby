@@ -18,9 +18,9 @@ module.exports = {
       options: {
         noSourcemaps: true,
         removeGeneratorTag: true,
-        removeReactHelmetAttrs: false,
+        removeReactHelmetAttrs: true,
         noInlineStyles: true,
-        removeFocusWrapper: true,
+        removeFocusWrapper: false,
         removePreloadLinks: true,
       },
     },
