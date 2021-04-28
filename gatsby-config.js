@@ -7,11 +7,23 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-typescript",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-typescript',
     {
-      resolve: "gatsby-plugin-no-sourcemaps"
+      resolve: 'gatsby-plugin-no-sourcemaps',
     },
-    "gatsby-plugin-no-javascript"
-  ]
-};
+    'gatsby-plugin-no-javascript',
+    {
+      resolve: 'gatsby-plugin-no-javascript-utils',
+      options: {
+        noSourcemaps: true,
+        removeGeneratorTag: true,
+        removeReactHelmetAttrs: false,
+        noInlineStyles: true,
+        removeGatsbyAnnouncer: false,
+        removeFocusWrapper: false,
+        removePreloadLinks: true,
+      },
+    },
+  ],
+}

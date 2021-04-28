@@ -4468,6 +4468,11 @@ gatsby-plugin-manifest@^2.1.1:
     semver "^5.6.0"
     sharp "^0.22.1"
 
+gatsby-plugin-no-javascript-utils@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-javascript-utils/-/gatsby-plugin-no-javascript-utils-0.5.0.tgz#f3daae4883c7b2859070ce9099fede4b38b3791f"
+  integrity sha512-HkdFdLu5qJvJA4b6E7Sb9ZffdhBXT73fS8lKYQypEsteFw+BMADPLuh7c/7EGcKnhcQ+a4lgc6QJTaDfDckNnQ==
+
 gatsby-plugin-no-javascript@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-no-javascript/-/gatsby-plugin-no-javascript-2.0.5.tgz#b30bd412fabeab1663b6c40a3aaeee878acfddea"
