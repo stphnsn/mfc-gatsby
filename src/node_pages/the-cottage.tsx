@@ -15,8 +15,7 @@ const Page = ({ pageContext: { bookings } }) => {
         <h1>The Cottage</h1>
         <p>
           With Manor Farm Cottage being your home away from home, we’ve gone to great lengths to make your stay as
-          comfortable as possible. After all, just because you’re in the countryside, it doesn’t mean you have to miss
-          out on those touches of luxury.
+          comfortable and relaxing as possible.
         </p>
       </section>
 
@@ -32,12 +31,12 @@ const Page = ({ pageContext: { bookings } }) => {
         </figure>
         <div className="description">
           <p>
-            Once inside, you’ll notice that Manor Farm Cottage been finished to a spectacularly high standard, and has
-            all the space and character you could wish for in a holiday retreat.
+            Once inside, you’ll notice that Manor Farm Cottage been finished to a high standard, and has all the space
+            and character you could wish for in a holiday retreat.
           </p>
           <p>
-            Two large 3-seater sofas provide plenty of room for relaxing, and the exposed brickwork, wooden beams and
-            oak flooring that runs throughout the cottage, remind you you’re in a special place.
+            Two large leather sofas provide plenty of room for relaxing, and the exposed brickwork, wooden beams and oak
+            flooring that runs throughout the cottage, remind you you’re in a special place.
           </p>
           <p>
             There’s also a {`32"`} High Definition TV, Blu-Ray player and Wi-Fi to keep you entertained, if and when you
@@ -47,8 +46,8 @@ const Page = ({ pageContext: { bookings } }) => {
         <div className="features">
           <h3>Features</h3>
           <ul>
-            <li>2 full length leather sofas</li>
-            <li>{`32"`} Freeview Sony HDTV</li>
+            <li>2 large leather sofas</li>
+            <li>{`32"`} Sharp HDTV with Freeview and Netflix</li>
             <li>Blu-ray / DVD player</li>
             <li>DAB Radio / iPod dock</li>
           </ul>
@@ -83,7 +82,9 @@ const Page = ({ pageContext: { bookings } }) => {
             <li>Oven, hob &amp; microwave</li>
             <li>Fridgefreezer</li>
             <li>Dishwasher</li>
-            <li>Washer dryer</li>
+            <li>Washing machine</li>
+            <li>Tumble dryer</li>
+            <li>Nespresso coffee machine</li>
           </ul>
         </div>
       </section>
@@ -102,18 +103,19 @@ const Page = ({ pageContext: { bookings } }) => {
         <div className="description">
           <p>
             The cottage has two comfortable-sized bedrooms, both of which feature full length windows providing plenty
-            of light. The larger of the rooms features a double bed, a gent’s wardrobe, chest of drawers and a dressing
+            of light. The larger of the rooms features a king size bed, a wardrobe, chest of drawers and a dressing
             table.
           </p>
-          <p>There’s also plenty of room for a cot, which we can provide if you need one.</p>
+          <p>There’s also plenty of room for a travel cot.</p>
         </div>
         <div className="features">
           <h3>Features</h3>
           <ul>
-            <li>Double bed {`(4'6")`}</li>
-            <li>2 beside tables with touch lamps</li>
+            <li>King size bed {`(5'0")`}</li>
+            <li>2 beside tables with lamps</li>
             <li>Clock radio</li>
             <li>Hair dryer</li>
+            <li>Spare towels</li>
           </ul>
         </div>
       </section>
@@ -133,14 +135,17 @@ const Page = ({ pageContext: { bookings } }) => {
         </figure>
         <div className="description">
           <p>
-            The smaller bedroom has twin beds (which can be pushed together to make a double) a gent’s wardrobe and 2
-            bedside tables with touch lamps.
+            The smaller bedroom has twin beds (which can be put together to make a king size) a wardrobe with drawers,
+            and 2 bedside tables.
           </p>
         </div>
         <div className="features">
           <h3>Features</h3>
           <ul>
             <li>2 beds {`(2'6")`}</li>
+            <li>Clock radio</li>
+            <li>Hair dryer</li>
+            <li>Spare towels</li>
           </ul>
         </div>
       </section>
@@ -160,7 +165,6 @@ const Page = ({ pageContext: { bookings } }) => {
             As well as a toilet, wash basin and shower, the bathroom has a separate bathtub – perfect for a long soak at
             the end of a hard day exploring.
           </p>
-          <p>Two sets of bath towels are provided on your arrival.</p>
         </div>
         <div className="features">
           <h3>Features</h3>
@@ -209,8 +213,9 @@ const Page = ({ pageContext: { bookings } }) => {
           with your questions.
         </p>
         <p>
-          Bookings start and end on a Saturday and the price displayed is for 7 nights. Shorter stays (min 3 nights) may
-          be available November to March. Unfortunately we are unable to accommodate pets.
+          Bookings start and end on a Saturday and the price displayed is for 7 nights. Check in from 3pm. Check out by
+          10am. Shorter stays (min 3 nights) may be available November to March. Unfortunately we are unable to
+          accommodate pets except assistance dogs.
         </p>
 
         <div className="key">
