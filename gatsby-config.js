@@ -20,7 +20,6 @@ module.exports = {
         removeGeneratorTag: true,
         removeReactHelmetAttrs: false,
         noInlineStyles: true,
-        removeGatsbyAnnouncer: true,
         removeFocusWrapper: true,
         removePreloadLinks: true,
       },
