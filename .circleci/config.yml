@@ -11,28 +11,28 @@ commands:
       - restore_cache:
           keys:
             # Download and cache dependencies
-            - mfc-gatsby-1.0.0-node_modules-cache-{{ checksum "package-lock.json" }}
+            - mfc-gatsby-1.0.0-node_modules-cache-{{ checksum "yarn.lock" }}
             # fallback to using the latest cache if no exact match is found
-            # - mfc-gatsby-1.0.0-node_modules-cache
+            - mfc-gatsby-1.0.0-node_modules-cache
 
-  npm_install:
+  yarn_install:
     steps:
       - restore_node_modules
 
       - run:
-          name: install
-          command: npm install
+          name: yarn
+          command: yarn
 
       - save_cache:
           paths:
             - node_modules
-          key: mfc-gatsby-1.0.0-node_modules-cache-{{ checksum "package-lock.json" }}
+          key: mfc-gatsby-1.0.0-node_modules-cache-{{ checksum "yarn.lock" }}
 
   build_and_clean:
     steps:
       - run:
           name: build
-          command: npm run build
+          command: yarn build
 
       - persist_to_workspace:
           root: .
@@ -44,7 +44,7 @@ jobs:
     executor: node-executor
     steps:
       - checkout
-      - npm_install
+      - yarn_install
 
   build_and_clean:
     executor: node-executor
@@ -64,7 +64,7 @@ jobs:
       - restore_node_modules
       - run:
           name: deploy
-          command: npm run deploy
+          command: yarn deploy
 
 workflows:
   version: 2
