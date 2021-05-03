@@ -2,7 +2,7 @@
   "name": "mfc-gatsby",
   "private": true,
   "description": "Manor Farm Cottages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "Unlicensed",
   "scripts": {
     "clean:cache": "rimraf .cache",
