@@ -17,8 +17,6 @@ commands:
 
   npm_install:
     steps:
-      - restore_node_modules
-
       - run:
           name: install
           command: npm install
