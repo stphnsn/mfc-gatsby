@@ -67,7 +67,7 @@ const createCalendar = (bookings = {}) => {
     daysInCalendar = daysInMonth - (saturday - 1) > 28 ? 35 : 28
     rows = daysInCalendar / 7
 
-    html += '<table>'
+    html += '<table id="' + monthNames[month] + '-' + year + '">'
     html += '<thead>'
     html += '<tr class="month">'
     html += '<th colspan="8">' + monthNames[month] + ' ' + year + '</th>'

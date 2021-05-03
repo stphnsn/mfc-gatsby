@@ -1,17 +1,35 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import '../../static/assets/css/styles.css'
 
 import { Calendar } from '../components/Calendar'
 import { Template } from '../components/Template'
 
-const Page = ({ pageContext: { bookings } }) => {
+interface Booking {
+  startDate: string
+  price: string
+}
+
+interface Bookings {
+  [key: string]: Booking
+}
+
+interface PageContext {
+  bookings: Bookings
+}
+
+interface PageProps {
+  pageContext: PageContext
+}
+
+const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
+  console.log(bookings)
   return (
     <Template
       title="The Cottage | Manor Farm Cottage, Goodmanham, East Yorkshire"
       desc="Boutique rural holiday cottage in Goodmanham, East Yorkshire. Close to York, Beverley and Hull"
       id="the-cottage">
-      <section className="intro">
+      <section className="intro" id="introduction">
         <h1>The Cottage</h1>
         <p>
           With Manor Farm Cottage being your home away from home, we’ve gone to great lengths to make your stay as
@@ -19,7 +37,7 @@ const Page = ({ pageContext: { bookings } }) => {
         </p>
       </section>
 
-      <section className="room">
+      <section className="room" id="the-lounge">
         <h2>The Lounge</h2>
         <figure>
           <picture>
@@ -54,7 +72,7 @@ const Page = ({ pageContext: { bookings } }) => {
         </div>
       </section>
 
-      <section className="room">
+      <section className="room" id="the-kitchen">
         <h2>The Kitchen</h2>
         <figure>
           <picture>
@@ -89,7 +107,7 @@ const Page = ({ pageContext: { bookings } }) => {
         </div>
       </section>
 
-      <section className="room">
+      <section className="room" id="master-bedroom">
         <h2>Master bedroom</h2>
         <figure>
           <picture>
@@ -120,7 +138,7 @@ const Page = ({ pageContext: { bookings } }) => {
         </div>
       </section>
 
-      <section className="room">
+      <section className="room" id="second-bedroom">
         <h2>Second bedroom</h2>
         <figure>
           <picture>
@@ -150,7 +168,7 @@ const Page = ({ pageContext: { bookings } }) => {
         </div>
       </section>
 
-      <section className="room">
+      <section className="room" id="the-bathroom">
         <h2>The Bathroom</h2>
         <figure>
           <picture>
@@ -176,7 +194,7 @@ const Page = ({ pageContext: { bookings } }) => {
         </div>
       </section>
 
-      <section className="room">
+      <section className="room" id="outside-area">
         <h2>Outside area</h2>
         <div className="description extra">
           <p>
@@ -187,14 +205,14 @@ const Page = ({ pageContext: { bookings } }) => {
         </div>
       </section>
 
-      <section className="room">
+      <section className="room" id="parking">
         <h2>Parking</h2>
         <div className="description extra">
           <p>One thing that Manor Farm Cottage is not short of is space. Parking is never an issue.</p>
         </div>
       </section>
 
-      <section className="room">
+      <section className="room" id="accessibility">
         <h2>Accessibility</h2>
         <div className="description extra">
           <p>
@@ -205,7 +223,7 @@ const Page = ({ pageContext: { bookings } }) => {
         </div>
       </section>
 
-      <section className="calendar">
+      <section className="calendar" id="booking-your-stay">
         <h2>Booking your stay</h2>
         <p>
           To make your booking check the availability calendar below and ring Liz on{' '}

@@ -8,8 +8,8 @@
     "clean:cache": "rimraf .cache",
     "clean:node": "rimraf node_modules",
     "clean:public": "rimraf public/*",
-    "clean": "yarn clean:cache && yarn clean:public && yarn clean:node ",
-    "build": "yarn clean:public && gatsby build",
+    "clean": "npm run clean:cache && npm run clean:public && npm run clean:node ",
+    "build": "npm run clean:public && gatsby build",
     "postbuild": "rimraf './public/*.+(js|json)' && rimraf './public/page-data' && rimraf './public/404' && rimraf './public/static'",
     "checkbuild": "cd ./public/ && ls",
     "deploy": "cd ./scripts/ && node deploy.js",
@@ -20,12 +20,12 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "lint:js": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:js:fix": "yarn lint --fix",
+    "lint:js:fix": "npm run lint --fix",
     "lint:ci": "circleci config validate",
-    "lint:all": "yarn lint:js && yarn lint:ci"
+    "lint:all": "npm run lint:js && npm run lint:ci"
   },
   "dependencies": {
-    "contentful": "^7.11.3",
+    "contentful": "^8.3.1",
     "gatsby": "^3.3.1",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-no-javascript": "^2.0.5",
@@ -60,7 +60,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint:all"
+      "pre-commit": "npm run lint:all"
     }
   }
 }

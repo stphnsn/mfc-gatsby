@@ -4,9 +4,9 @@ const cleanContent = require('./cleanContent')
 
 const getContent = async (content_type = 'booking') => {
   const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
+    space: process.env.MFC_CTFL_SPACE_ID,
     environment: 'master',
-    accessToken: process.env.CONTENTFUL_TOKEN,
+    accessToken: process.env.MFC_CTFL_TOKEN,
   })
 
   const { items } = await client.getEntries({
