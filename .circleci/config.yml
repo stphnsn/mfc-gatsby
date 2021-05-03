@@ -13,10 +13,12 @@ commands:
             # Download and cache dependencies
             - mfc-gatsby-1.0.0-node_modules-cache-{{ checksum "package-lock.json" }}
             # fallback to using the latest cache if no exact match is found
-            - mfc-gatsby-1.0.0-node_modules-cache
+            # - mfc-gatsby-1.0.0-node_modules-cache
 
   npm_install:
     steps:
+      - restore_node_modules
+
       - run:
           name: install
           command: npm install
