@@ -23,7 +23,6 @@ interface PageProps {
 }
 
 const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
-  console.log(bookings)
   return (
     <Template
       title="The Cottage | Manor Farm Cottage, Goodmanham, East Yorkshire"
