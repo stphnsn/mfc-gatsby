@@ -42,7 +42,7 @@ const Page = () => (
       <h2>East Yorkshire</h2>
       <figure>
         <img
-          src="https://api.tiles.mapbox.com/v3/rpstephenson.ik7cmcb8/pin-l-village(-0.64605,53.87699,3)/-0.64605,53.87698,10/950x600.png"
+          src="/assets/images/map1.jpg"
           alt="Map showing the location of Manor Farm Cottages in Goodmanham near Market Weighton"
         />
       </figure>
@@ -56,7 +56,7 @@ const Page = () => (
       <h2>The Village</h2>
       <figure>
         <img
-          src="https://api.tiles.mapbox.com/v3/rpstephenson.ik7cmcb8/pin-l-village(-0.64605,53.87699,3)/-0.64605,53.87698,14/950x600.png"
+          src="/assets/images/map2.jpg"
           alt="Map showing the location of Manor Farm Cottages in Goodmanham near Market Weighton"
         />
       </figure>
