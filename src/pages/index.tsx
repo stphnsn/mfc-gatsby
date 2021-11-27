@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Template } from '../components/Template'
+import { WarningBanner } from '../components/WarningBanner'
 
 const Page = () => (
   <Template
@@ -74,10 +75,11 @@ const Page = () => (
         If you want to discover for yourself just why Yorkshire is known as ‘God’s Own County’, Manor Farm Cottage is
         the perfect base.
       </p>
-      <p>
+      <WarningBanner />
+      {/* <p>
         Book your stay by ringing Liz on <a href="tel:+441430873510">+44 1430 873510</a> or email{' '}
         <a href="mailto:info@manorfarm-cottages.co.uk">info@manorfarm-cottages.co.uk</a>.
-      </p>
+      </p> */}
     </section>
   </Template>
 )

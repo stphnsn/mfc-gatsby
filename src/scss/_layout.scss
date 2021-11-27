@@ -47,6 +47,17 @@ figure img {
   width: 100%;
 }
 
+.warning-banner {
+  background-color: #c2a7a7a6;
+  margin: 0 0 15px;
+  padding: 15px;
+}
+
+.warning-banner p:last-child {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-height: 400px) {
   .main {
     min-height: 500px;
@@ -79,5 +90,9 @@ figure img {
 
   .content {
     padding: 0;
+  }
+
+  .warning-banner {
+    padding: 30px;
   }
 }
