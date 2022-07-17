@@ -4,7 +4,6 @@ import '../../static/assets/css/styles.css'
 
 import { Calendar } from '../components/Calendar'
 import { Template } from '../components/Template'
-import { WarningBanner } from '../components/WarningBanner'
 
 interface Booking {
   startDate: string
@@ -225,12 +224,11 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
 
       <section className="calendar text" id="booking-your-stay">
         <h2>Booking your stay</h2>
-        <WarningBanner />
-        {/* <p>
+        <p>
           To make your booking check the availability calendar below and ring Liz on{' '}
           <a href="tel:+441430873510">+44 1430 873510</a> or <a href="mailto:info@manorfarm-cottages.co.uk">email us</a>{' '}
           with your questions.
-        </p> */}
+        </p>
         <p>
           Bookings start and end on a Saturday and the price displayed is for 7 nights. Check in from 3pm. Check out by
           10am. Shorter stays (min 3 nights) may be available November to March. Unfortunately we are unable to
