@@ -133,7 +133,6 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
           <ul>
             <li>King size bed {`(5'0")`}</li>
             <li>2 beside tables with lamps</li>
-            <li>Clock radio</li>
             <li>Hair dryer</li>
             <li>Spare towels</li>
           </ul>
@@ -149,16 +148,11 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
           />
         </figure>
         <div className="description">
-          <p>
-            The smaller bedroom has twin beds (which can be put together to make a king size) a wardrobe with drawers,
-            and 2 bedside tables.
-          </p>
+          <p>The smaller bedroom has a single bed, a wardrobe with drawers, and a bedside table.</p>
         </div>
         <div className="features">
           <h3>Features</h3>
           <ul>
-            <li>2 beds {`(2'6")`}</li>
-            <li>Clock radio</li>
             <li>Hair dryer</li>
             <li>Spare towels</li>
           </ul>
@@ -179,7 +173,7 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
         <div className="features">
           <h3>Features</h3>
           <ul>
-            <li>Large bathtub</li>
+            <li>Large shower-over-bath</li>
             <li>Heated towel rail</li>
           </ul>
         </div>
