@@ -16,59 +16,44 @@ const Page = () => (
     </section>
     <section className="gallery">
       <figure>
-        <picture>
-          <source srcSet="/assets/images/cottage-exterior-1660x1104@75.jpg" media="(min-width: 1100px)" />
-          <source srcSet="/assets/images/cottage-exterior-1000x665@75.jpg" media="(min-width: 830px)" />
-          <source srcSet="/assets/images/cottage-exterior-600x399@75.jpg" />
-          <img
-            srcSet="/assets/images/cottage-exterior-600x399@40.jpg"
-            alt="External view of Manor Farm Cottage a 2 bed holiday let near York"
-          />
-        </picture>
+        <img
+          src="/assets/images/2022/cottage-exterior-rear.jpg"
+          alt="External view of Manor Farm Cottage a 2 bed holiday let near York"
+        />
       </figure>
       <figure>
-        <picture>
-          <source srcSet="/assets/images/cottage-lounge-1660x1104@75.jpg" media="(min-width: 1100px)" />
-          <source srcSet="/assets/images/cottage-lounge-1000x665@75.jpg" media="(min-width: 830px)" />
-          <source srcSet="/assets/images/cottage-lounge-600x399@75.jpg" />
-          <img
-            srcSet="/assets/images/cottage-lounge-600x399@40.jpg"
-            alt="View of the well appointed and comfortable interior of Manor Farm cottage"
-          />
-        </picture>
+        <img
+          src="/assets/images/2022/cottage-lounge.jpg"
+          alt="View of the well appointed and comfortable interior of Manor Farm cottage"
+        />
       </figure>
       <figure>
-        <picture>
-          <source srcSet="/assets/images/field-1660x1104@75.jpg" media="(min-width: 1100px)" />
-          <source srcSet="/assets/images/field-1000x665@75.jpg" media="(min-width: 830px)" />
-          <source srcSet="/assets/images/field-600x399@75.jpg" />
-          <img srcSet="/assets/images/field-600x399@40.jpg" alt="The wonderful view from the cottage" />
-        </picture>
+        <img src="/assets/images/2022/cottage-exterior-front.jpg" alt="Exterior view of Manor Farm Cottage" />
       </figure>
       <figure>
-        <picture>
-          <source srcSet="/assets/images/cottage-exterior-panels-1660x1104@75.jpg" media="(min-width: 1100px)" />
-          <source srcSet="/assets/images/cottage-exterior-panels-1000x665@75.jpg" media="(min-width: 830px)" />
-          <source srcSet="/assets/images/cottage-exterior-panels-600x399@75.jpg" />
-          <img
-            srcSet="/assets/images/cottage-exterior-panels-600x399@40.jpg"
-            alt="Exterior view of Manor Farm Cottage"
-          />
-        </picture>
+        <img src="/assets/images/field-1660x1104@75.jpg" alt="The wonderful view from the cottage" />
       </figure>
     </section>
 
     <section className="text">
       <p>
+        <a href="/the-cottage/">The Cottage</a> re-opens for guests from 16th July and is available for bookings from
+        23rd July until the end of the year.
+      </p>
+
+      <p>
+        The property has been extended with a large master bedroom. It has an ensuite with a walk-in shower, sliding
+        doors to the patio, and superb views.
+      </p>
+      <p>
+        We’ve added new windows and doors thoughout the cottage to make the most of the outside space and the amazing
+        countryside.
+      </p>
+
+      <p>
         Set in 23 acres of private rural countryside, and within easy reach of the very best that the region has to
         offer, you’ll find awe-inspiring scenery, quaint market towns, picture-postcard seaside resorts and must-see
         tourist spots all on your doorstep.
-      </p>
-      <p>
-        <a href="/the-cottage/" rel="internal">
-          Manor Farm Cottage
-        </a>{' '}
-        offers modern high-quality accommodation in a wonderfully quiet location with superb views.
       </p>
       <p>
         If you want to discover for yourself just why Yorkshire is known as ‘God’s Own County’, Manor Farm Cottage is

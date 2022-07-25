@@ -39,12 +39,7 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
       <section className="room" id="the-lounge">
         <h2>The Lounge</h2>
         <figure>
-          <picture>
-            <source srcSet="/assets/images/cottage-lounge-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/cottage-lounge-alt-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/cottage-lounge-alt-600x399@75.jpg" />
-            <img srcSet="/assets/images/cottage-lounge-alt-600x399@40.jpg" alt="Manor Farm Cottage’s generous lounge" />
-          </picture>
+          <img src="/assets/images/2022/cottage-lounge.jpg" alt="Manor Farm Cottage’s generous lounge" />
         </figure>
         <div className="description">
           <p>
@@ -74,16 +69,7 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
       <section className="room" id="the-kitchen">
         <h2>The Kitchen</h2>
         <figure>
-          <picture>
-            <source srcSet="/assets/images/cottage-kitchen-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/cottage-kitchen-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/cottage-kitchen-600x399@75.jpg" />
-
-            <img
-              srcSet="/assets/images/cottage-kitchen-600x399@40.jpg"
-              alt="The well equipped kitchen in Manor Farm Cottage"
-            />
-          </picture>
+          <img srcSet="/assets/images/2022/cottage-kitchen.jpg" alt="The well equipped kitchen in Manor Farm Cottage" />
         </figure>
         <div className="description">
           <p>
@@ -109,19 +95,16 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
       <section className="room" id="master-bedroom">
         <h2>Master bedroom</h2>
         <figure>
-          <picture>
-            <source srcSet="/assets/images/cottage-master-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/cottage-master-alt-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/cottage-master-alt-600x399@75.jpg" />
-
-            <img srcSet="/assets/images/cottage-master-alt-600x399@40.jpg" alt="Manor Farm Cottage’s mater bedroom" />
-          </picture>
+          <img src="/assets/images/2022/cottage-master-bedroom.jpg" alt="Manor Farm Cottage’s master bedroom" />
+        </figure>
+        <figure>
+          <img src="/assets/images/2022/cottage-master-bedroom-view.jpg" alt="Manor Farm Cottage’s master bedroom" />
         </figure>
         <div className="description">
           <p>
-            The cottage has two comfortable-sized bedrooms, both of which feature full length windows providing plenty
-            of light. The larger of the rooms features a king size bed, a wardrobe, chest of drawers and a dressing
-            table.
+            The cottage has three bedrooms all of which feature full length windows providing plenty of light. The
+            larger of the rooms features an en-suite bathroom with walk-in shower, a king size bed, a wardrobe, chest of
+            drawers and a dressing table.
           </p>
           <p>There’s also plenty of room for a travel cot.</p>
         </div>
@@ -140,15 +123,30 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
       <section className="room" id="second-bedroom">
         <h2>Second bedroom</h2>
         <figure>
-          <picture>
-            <source srcSet="/assets/images/cottage-bedroom-alt-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/cottage-bedroom-alt-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/cottage-bedroom-alt-600x399@75.jpg" />
-            <img
-              srcSet="/assets/images/cottage-bedroom-alt-600x399@40.jpg"
-              alt="Manor Farm Cottage’s second bedroom shown with twin beds"
-            />
-          </picture>
+          <img src="/assets/images/cottage-master-alt-1660x1104@75.jpg" alt="Manor Farm Cottage’s second bedroom" />
+        </figure>
+        <div className="description">
+          <p>The second bedroom features a king size bed, a wardrobe, chest of drawers and a dressing table.</p>
+        </div>
+        <div className="features">
+          <h3>Features</h3>
+          <ul>
+            <li>King size bed {`(5'0")`}</li>
+            <li>2 beside tables with lamps</li>
+            <li>Clock radio</li>
+            <li>Hair dryer</li>
+            <li>Spare towels</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="room" id="third-bedroom">
+        <h2>Third bedroom</h2>
+        <figure>
+          <img
+            src="/assets/images/2022/cottage-third-bedroom.jpg"
+            alt="Manor Farm Cottage’s third bedroom shown with single bed"
+          />
         </figure>
         <div className="description">
           <p>
@@ -170,23 +168,17 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
       <section className="room" id="the-bathroom">
         <h2>The Bathroom</h2>
         <figure>
-          <picture>
-            <source srcSet="/assets/images/cottage-bathroom-1660x1104@75.jpg" media="(min-width: 1100px)" />
-            <source srcSet="/assets/images/cottage-bathroom-1000x665@75.jpg" media="(min-width: 830px)" />
-            <source srcSet="/assets/images/cottage-bathroom-600x399@75.jpg" />
-            <img srcSet="/assets/images/cottage-bathroom-600x399@40.jpg" alt="Manor Farm Cottage’s bathroom" />
-          </picture>
+          <img srcSet="/assets/images/2022/cottage-bathroom.jpg" alt="Manor Farm Cottage’s bathroom" />
         </figure>
         <div className="description">
           <p>
-            As well as a toilet, wash basin and shower, the bathroom has a separate bathtub – perfect for a long soak at
-            the end of a hard day exploring.
+            As well as a toilet and wash basin, the bathroom has a shower-over-bath – perfect for a long soak at the end
+            of a hard day exploring.
           </p>
         </div>
         <div className="features">
           <h3>Features</h3>
           <ul>
-            <li>Walk-in shower</li>
             <li>Large bathtub</li>
             <li>Heated towel rail</li>
           </ul>
