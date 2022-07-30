@@ -69,7 +69,7 @@ const Page: FC<PageProps> = ({ pageContext: { bookings } }) => {
       <section className="room" id="the-kitchen">
         <h2>The Kitchen</h2>
         <figure>
-          <img srcSet="/assets/images/2022/cottage-kitchen.jpg" alt="The well equipped kitchen in Manor Farm Cottage" />
+          <img src="/assets/images/2022/cottage-kitchen-2.jpg" alt="The well equipped kitchen in Manor Farm Cottage" />
         </figure>
         <div className="description">
           <p>
